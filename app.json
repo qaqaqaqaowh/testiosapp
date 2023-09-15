@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.itsotest.myapp"
     },
     "android": {
       "adaptiveIcon": {
@@ -25,6 +26,19 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "build": {
+      "preview": {
+        "distribution": "internal",
+        "ios": {
+          "enterpriseProvisioning": "universal"
+        }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "aa87cadd-bddf-4f7a-80a2-4ffed31371e8"
+      }
     }
   }
 }
